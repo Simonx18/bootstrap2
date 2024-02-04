@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/spiaggia.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(12, 12, 12, 0.8);
+            transition: background-color 0.3s ease;
+            color: white;
+            margin: 0;
+        }
+
+        .planeimg {
+            width: 50%;
+            height: auto;
+        }
+
+        container-sales-week {
+            width: 100%;
+        }
+
+        .offer-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .offer-img {
+            width: 66%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .offer-details {
+            width: 33%;
+            text-align: left;
+        } 
+        .last-minute-section {
+            background-color: #eaeaea;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .last-minute-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .last-minute-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .summer-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .summer-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .testimonial-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        body {
+            background-color: #eaeaea59;
+        }
+
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .week-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .week-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 0;">
+        <div class="container-fluid align-items-center">
+            <div class="row">
+                <div class="col-6">
+                    <div class="planeimg container-fluid">
+                        <img src="/assets/airplane.png" alt="airplane" class="img-fluid" style="max-height: 80px; max-width: 100%;">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">Dream Holidays</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-sales-week">Week's sales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-the-best-album-ever">Welcome summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-the-best-album-ever">Day's sales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-the-best-album-ever">Last minute</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-the-best-album-ever">Testimonial</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<hr class="my-5">
+<div class="container-fluid py-5" style="background-color: #eaeaea59;">
+    <h1 class="display-5 fw-bold">Dream Holidays</h1>
+    <p class="col-md-8 fs-4">Forget about it for a while...</p>
+    <button class="btn btn-primary btn-lg" type="button">Create your itinerary</button>
+</div>
+<div class="container-fluid py-5 d-flex align-items-center section">
+    <div class="container week-container" style="background-color: #eaeaea59;" id="container-sales-week">
+        <h2>Week's sales</h2>
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="week-card text-center">
+                    <img src="assets/bucarest.jpg" alt="bucarest" class="week-img">
+                    <h5>Bucarest</h5>
+                    <span class="citiest-week">Romania</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="week-card text-center">
+                    <img src="assets/budapest.jpg" alt="budapest" class="week-img">
+                    <h5>Budapest</h5>
+                    <span class="citiest-week">Ungheria</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="week-card text-center">
+                    <img src="assets/praga.jpg" alt="praga" class="week-img">
+                    <h5>Praga</h5>
+                    <span class="citiest-week">Repubblica Ceca</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="week-card text-center">
+                    <img src="assets/sofia.jpg" alt="sofia" class="week-img">
+                    <h5>Sofia</h5>
+                    <span class="citiest-week">Bulgaria</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5 section" style="background-color: #eaeaea59;" id="container-welcome-summer">
+    <h2>Welcome Summer</h2>
+    <div class="row">
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach1.jpg" alt="beach1" class="summer-img">
+                <h5>Maldives</h5>
+                <span>Indian Ocean</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach2.jpg" alt="beach2" class="summer-img">
+                <h5>Santorini</h5>
+                <span>Greece</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach3.jpg" alt="beach3" class="summer-img">
+                <h5>Bora Bora</h5>
+                <span>French Polynesia</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach4.jpg" alt="beach4" class="summer-img">
+                <h5>Maui</h5>
+                <span>Hawaii, USA</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach5.jpg" alt="beach5" class="summer-img">
+                <h5>Phuket</h5>
+                <span>Thailand</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="summer-card text-center">
+                <img src="assets/beach6.jpg" alt="beach6" class="summer-img">
+                <h5>Great Barrier Reef</h5>
+                <span>Australia</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5 section" style="background-color: #eaeaea59;" id="container-offerta-giorno">
+    <h2>Offerta del giorno</h2>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="offer-card">
+                <img src="assets/beach1.jpg" alt="beach1" class="offer-img">
+                <div class="offer-details">
+                    <h5>Paradiso Tropicale</h5>
+                    <p>Data: 01/07/2024</p>
+                    <p>Prezzo: $999</p>
+                    <p>Esplora le spiagge di sabbia bianca e le acque cristalline di Paradiso Tropicale. Goditi una vacanza rilassante sotto il sole tropicale.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="offer-card">
+                <img src="assets/mountain1.jpg" alt="mountain1" class="offer-img">
+                <div class="offer-details">
+                    <h5>Cime Serene</h5>
+                    <p>Data: 02/07/2024</p>
+                    <p>Prezzo: $899</p>
+                    <p>Esplora le vette delle Cime Serene. Un'esperienza unica tra le montagne con panorami mozzafiato e aria fresca di montagna.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="last-minute-section">
+    <div class="container">
+        <h2>Last Minute Deals</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="last-minute-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Destination 1" class="last-minute-img">
+                    <h5>Destination 1</h5>
+                    <p>Scopri questa affascinante destinazione last minute.</p>
+                    <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="last-minute-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Destination 2" class="last-minute-img">
+                    <h5>Destination 2</h5>
+                    <p>Una destinazione emozionante a portata di mano.</p>
+                    <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="last-minute-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Destination 3" class="last-minute-img">
+                    <h5>Destination 3</h5>
+                    <p>Goditi un'esperienza indimenticabile a breve distanza.</p>
+                    <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-section">
+    <div class="container">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/60" alt="Avatar" class="testimonial-avatar">
+                    <p>"Dream Holidays ha reso il mio viaggio un'esperienza unica. Personale cordiale e destinazioni mozzafiato!"</p>
+                    <p><strong>John Doe</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/60" alt="Avatar" class="testimonial-avatar">
+                    <p>"Grazie a Dream Holidays, ho vissuto la vacanza dei miei sogni. Servizio impeccabile e attenzione ai dettagli."</p>
+                    <p><strong>Jane Smith</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/60" alt="Avatar" class="testimonial-avatar">
+                    <p>"Consiglio Dream Holidays a tutti coloro che cercano un'esperienza di viaggio straordinaria. Non vedo l'ora di tornare!"</p>
+                    <p><strong>Mario Rossi</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Dream Holidays</h5>
+                    <p>La tua agenzia di viaggi per esperienze indimenticabili.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contattaci</h5>
+                    <p>Indirizzo: Via dei Sogni, 123 - Città Fantasia</p>
+                    <p>Email: info@dreamholidays.com</p>
+                    <p>Telefono: +01 234 567 890</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <button class="btn btn-primary">Contattaci</button>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
